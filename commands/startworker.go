@@ -25,7 +25,7 @@ func getWorkerConfig() (*worker.Config, error) {
 	config := &worker.Config{
 		IpfsAPI:       "localhost:5001",
 		ElasticSearch: el,
-		HashWorkers:   140,
+		HashWorkers:   280,
 		FileWorkers:   120,
 		IpfsTimeout:   360 * time.Duration(time.Second),
 		HashWait:      time.Duration(100 * time.Millisecond),
